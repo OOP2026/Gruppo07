@@ -14,7 +14,7 @@ public class LayeredArchitectureTest {
     @ArchTest
     public static final ArchRule layer_dependencies_are_respected = layeredArchitecture()
 
-            .layer("Boundaries").definedBy("project.GUI..")
+            .layer("Boundaries").definedBy("project.gui..")
             .layer("Controls").definedBy("project.controller..")
             .layer("Entities").definedBy("project.model..")
             .layer("Database").definedBy("project.implementazioneDao..")
